@@ -1,0 +1,49 @@
+import numpy as np
+
+# Basic Array Operations
+array_3x3 = np.random.randint(0, 11, (3, 3))
+print("3x3 Array:\n", array_3x3)
+print("Sum:", np.sum(array_3x3))
+print("Mean:", np.mean(array_3x3))
+print("Standard Deviation:", np.std(array_3x3))
+
+array_1D = np.random.randint(1, 10, 10)
+print("1D Array:", array_1D)
+print("Cumulative Sum:", np.cumsum(array_1D))
+
+array_2x3_a = np.random.randint(1, 10, (2, 3))
+array_2x3_b = np.random.randint(1, 10, (2, 3))
+print("Addition of two arrays:\n", array_2x3_a + array_2x3_b)
+print("Subtraction of two arrays:\n", array_2x3_a - array_2x3_b)
+print("Multiplication of two arrays:\n", array_2x3_a * array_2x3_b)
+print("Division of two arrays:\n", array_2x3_a / array_2x3_b)
+
+identity_matrix = np.eye(4)
+print("4x4 Identity Matrix:\n", identity_matrix)
+
+a = np.array([52, 103, 151, 203, 25])
+print("Divided Array:", a / 5)
+
+# Array Manipulation
+array_1D_12 = np.arange(12)
+matrix_3x4 = array_1D_12.reshape(3, 4)
+print("Reshaped 3x4 Matrix:\n", matrix_3x4)
+
+matrix_3x3 = np.random.randint(1, 10, (3, 3))
+print("Flattened Array:", matrix_3x3.flatten())
+
+matrix_3x3_b = np.random.randint(1, 10, (3, 3))
+print("Horizontally Stacked:\n", np.hstack((matrix_3x3, matrix_3x3_b)))
+print("Vertically Stacked:\n", np.vstack((matrix_3x3, matrix_3x3_b)))
+
+array_a = np.random.randint(1, 10, (3, 3))
+array_b = np.random.randint(1, 10, (3, 2))
+concatenated = np.concatenate((array_a, array_b), axis=1)
+print("Concatenated Along New Axis:\n", concatenated)
+
+matrix_3x2 = np.random.randint(1, 10, (3, 2))
+print("Transposed and Reshaped:\n", matrix_3x2.T.reshape(3, 2))
+
+# Indexing and Slicing
+array_15 = np.arange(15)
+print("Extracted Elements:", array_15[2:10:2])
