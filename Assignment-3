@@ -1,0 +1,62 @@
+# Even or Odd Checker
+num = int(input("Enter an integer: "))
+if num % 2 == 0:
+    print("This number is Even")
+else:
+    print("This number is Odd")
+
+# Find the Largest Number
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    print("Largest number is:", num1)
+elif num2 >= num1 and num2 >= num3:
+    print("Largest number is:", num2)
+else:
+    print("Largest number is:", num3)
+
+# Number Classification
+number = float(input("Enter number: "))
+
+if number > 0:
+    print("Positive")
+elif number < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+# Sum of Numbers in a Range
+start = int(input("Enter start number: "))
+end = int(input("Enter end number: "))
+total = sum(range(start, end + 1))
+print("Sum of numbers:", total)
+
+# Printing a Multiplication Table
+n = int(input("Enter a number for multiplication table: "))
+for i in range(1, 11):
+    print(f"{n} x {i} = {n * i}")
+
+# Counting Vowels in a String
+text = input("Enter a string: ").lower()
+vowel_count = sum(1 for char in text if char in "aeiou")
+print("Number of vowels:", vowel_count)
+
+# Factorial Calculator
+num = int(input("Enter a positive integer: "))
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print(f"Factorial of {num} is {factorial}")
+
+# FizzBuzz Game
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
