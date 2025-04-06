@@ -1,0 +1,35 @@
+# Basic String Manipulation
+message = "Hello, World!"
+print(message)
+
+text = "Python Programming"
+print(text[:5])  # Extracting first five characters
+
+# String Methods
+s = "Niranjansai"
+print(s.upper())  # Convert to uppercase
+
+s2 = "Datascience is fun"
+print(s2.replace("fun", "awesome"))  # Replace word
+
+# String Formatting
+name = "anusha"
+age = 25
+print(f"My name is {name}, and I am {age} years old.")  # f-string formatting
+
+price = 49.99
+print(f"{price:.2f}")  # Formatting price to two decimal places
+
+# String Functions
+sentence = "Hello, how are you?"
+print(sentence.count('o'))  # Count occurrences of 'o'
+
+sentence2 = "Hello, world! Python is amazing."
+print(sentence2.find("world"))  # Find position of "world"
+
+# Reverse and Check
+word = "Finalday"
+print(word[::-1])  # Reverse the string
+
+palindrome = "madam"
+print(palindrome == palindrome[::-1])  # Check if palindrome
